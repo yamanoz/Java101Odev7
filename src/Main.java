@@ -20,7 +20,7 @@ public class Main {
 
  */
 
-
+/*
         //Cok boyutlu dizilerler A harfi olusturm
         String[][] letter = new String[7][4];
 
@@ -44,3 +44,39 @@ public class Main {
         }
     }
     }
+
+ */
+
+        //Bir sayi dizisinde tekrar eden çift sayıları bulan program
+
+        int[] dizi = {2, 3, 4, 5, 6, 7, 8, 8, 3, 6, 2, 23};
+        int[] doublenumber = new int[dizi.length];
+        int sayac = 0;
+        for (int i = 0; i < dizi.length; i++) {
+            for (int j = 0; j < dizi.length; j++) {
+                if ((i != j) && dizi[i] == dizi[j] && dizi[i] % 2 == 0) {
+                    if (!isFind(doublenumber, dizi[i])) {
+                        doublenumber[sayac] = dizi[i];
+                        sayac++;
+                    }
+                }
+            }
+        }
+
+        for (int value : doublenumber) {
+            if(value!=0)
+            System.out.print(value + " ");
+        }
+    }
+
+    public static boolean isFind(int[] dizi, int sayi) {
+        for (int i = 0; i < dizi.length; i++) {
+            if (sayi == dizi[i]) {
+                return true;
+
+            }
+
+        }
+        return false;
+    }
+}
