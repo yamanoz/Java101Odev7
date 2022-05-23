@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b24b00ca-29f7-4c95-956f-9faffb13626a" name="Changes" comment="Yıldızlarla B harfi olusturma">
+    <list default="true" id="b24b00ca-29f7-4c95-956f-9faffb13626a" name="Changes" comment="tekrar eden çift sayıları bulan program">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -79,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653226061832</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="tekrar eden çift sayıları bulan program">
+      <created>1653228147261</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1653228147261</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -97,6 +104,7 @@
     <MESSAGE value="Harmonik hesaplama ornegi" />
     <MESSAGE value="Girilen Sayidan buyuk en yakin sayi ve&#10;Girilen Sayidan kucuk en yakin sayi" />
     <MESSAGE value="Yıldızlarla B harfi olusturma" />
-    <option name="LAST_COMMIT_MESSAGE" value="Yıldızlarla B harfi olusturma" />
+    <MESSAGE value="tekrar eden çift sayıları bulan program" />
+    <option name="LAST_COMMIT_MESSAGE" value="tekrar eden çift sayıları bulan program" />
   </component>
 </project>

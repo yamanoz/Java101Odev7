@@ -46,9 +46,8 @@ public class Main {
     }
 
  */
-
+        /*
         //Bir sayi dizisinde tekrar eden çift sayıları bulan program
-
         int[] dizi = {2, 3, 4, 5, 6, 7, 8, 8, 3, 6, 2, 23};
         int[] doublenumber = new int[dizi.length];
         int sayac = 0;
@@ -78,5 +77,41 @@ public class Main {
 
         }
         return false;
+    }
+
+         */
+
+
+        Scanner scanner=new Scanner(System.in);
+        System.out.print("Dizinin boyutu :");
+        int boyut=scanner.nextInt();
+        int[] dizi=new int[boyut];
+        System.out.println("Dizinin elemanlarina giriniz :");
+        for(int i=0;i<boyut;i++){
+            System.out.print((i+1)+". Eleman :");
+            dizi[i]=scanner.nextInt();
+        }
+        selectionSort(dizi);
+        }
+
+
+    public static void selectionSort(int arr[]) {
+        for (int i = 0; i < arr.length; i++) {
+            int min = i;
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[j] < arr[min]) {
+                    min = j;
+                }
+            }
+            int temp = arr[i];
+            arr[i] = arr[min];
+            arr[min] = temp;
+        }
+        System.out.print("Sıralı :");
+        for(int j=0;j<arr.length;j++) {
+
+            System.out.print(arr[j]+" ");
+        }
+
     }
 }
