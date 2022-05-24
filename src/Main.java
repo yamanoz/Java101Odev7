@@ -121,8 +121,9 @@ public class Main {
     }
 
    */
+/*
 
-        //Dizideki elemanların frekansı
+//Dizideki elemanların frekansı
         int[] dizi={10,20,20,10,10,20,5,20};
         int tekrarSayisi=1,farkliDeger=0;
         Arrays.sort(dizi);
@@ -140,6 +141,39 @@ public class Main {
                 tekrarSayisi=1;
             }
         }
+
+
+ */
+        int[][] dizi=new int[2][3];
+        int[][] trandizi=new int[3][2];
+
+        for(int i=0;i<dizi.length;i++){
+            for(int j=0;j<dizi[0].length;j++){
+                dizi[i][j]= (int) (Math.random()*10);
+            }
+        }
+        System.out.println("Matris :");
+
+        for(int i=0;i<dizi.length;i++){
+            for(int j=0;j<dizi[0].length;j++){
+                System.out.print(dizi[i][j]+" ");
+            }
+            System.out.println("");
+        }
+        System.out.println("Transpozu :");
+
+        for(int i=0;i<trandizi.length;i++){
+            for(int j=0;j<trandizi[0].length;j++){
+                System.out.print(dizi[j][i]+" ");
+            }
+            System.out.println("");
+        }
+
+
+
+
+
+
 
     }
 
