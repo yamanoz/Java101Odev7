@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -81,8 +82,10 @@ public class Main {
 
          */
 
+  /*
 
-        Scanner scanner=new Scanner(System.in);
+   //Dışarıdan girilen bir diziyi sıralama algoritması
+     Scanner scanner=new Scanner(System.in);
         System.out.print("Dizinin boyutu :");
         int boyut=scanner.nextInt();
         int[] dizi=new int[boyut];
@@ -95,7 +98,9 @@ public class Main {
         }
 
 
-    public static void selectionSort(int arr[]) {
+
+
+   public static void selectionSort(int arr[]) {
         for (int i = 0; i < arr.length; i++) {
             int min = i;
             for (int j = i + 1; j < arr.length; j++) {
@@ -114,4 +119,50 @@ public class Main {
         }
 
     }
-}
+
+   */
+
+        //Dizideki elemanların frekansı
+        int[] dizi={10,20,20,10,10,20,5,20};
+        int tekrarSayisi=1,farkliDeger=0;
+        Arrays.sort(dizi);
+        for(int i=0;i<dizi.length;i++){
+            if(dizi[i]!=farkliDeger){
+                for(int j=0;j<dizi.length;j++){
+                    if((i!=j)&&dizi[i]==dizi[j]){
+                        tekrarSayisi++;
+                        farkliDeger=dizi[i];
+                    }
+
+
+                }
+                System.out.println(dizi[i]+" sayisi "+tekrarSayisi+" kere tekrar edildi.");
+                tekrarSayisi=1;
+            }
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
