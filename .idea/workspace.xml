@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b24b00ca-29f7-4c95-956f-9faffb13626a" name="Changes" comment="Diziden tekrar eden sayilarin adetini hesaplayan program">
+    <list default="true" id="b24b00ca-29f7-4c95-956f-9faffb13626a" name="Changes" comment="Sayi tahmin oyunu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -100,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653403575600</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Sayi tahmin oyunu">
+      <created>1653485094503</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1653485094503</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -121,6 +128,7 @@
     <MESSAGE value="tekrar eden çift sayıları bulan program" />
     <MESSAGE value="Dizideki elemanları sıralma" />
     <MESSAGE value="Diziden tekrar eden sayilarin adetini hesaplayan program" />
-    <option name="LAST_COMMIT_MESSAGE" value="Diziden tekrar eden sayilarin adetini hesaplayan program" />
+    <MESSAGE value="Sayi tahmin oyunu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sayi tahmin oyunu" />
   </component>
 </project>

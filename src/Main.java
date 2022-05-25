@@ -179,9 +179,10 @@ public class Main {
          */
 
 
+
+
+        /*
         //sayi tahmin oyunu
-
-
 
                 int number = (int) Math.random()*100;
                 //int number = (int) (Math.random() * 100);
@@ -232,10 +233,39 @@ public class Main {
                     if (!isWrong) {
                         System.out.println("Tahminleriniz : " + Arrays.toString(wrong));
                     }
-                }
+                    }
+                    */
 
-            }
+
+
+
+        //Polidromik sayi bulma
+
+        System.out.println(isPalindrome("merem"));
+
+
+
+    }
+
+
+    static boolean isPalindrome(String str) {
+        int i = 0, j = str.length() - 1;
+        while (i < j) {
+            if (str.charAt(i) != str.charAt(j))
+                return false;
+            i++;
+            j--;
         }
+        return true;
+    }
+
+}
+
+
+
+
+
+
 
 
 
