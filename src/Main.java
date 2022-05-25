@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -144,6 +145,8 @@ public class Main {
 
 
  */
+        /*
+        //bir dizinin tranpozunu bulan program
         int[][] dizi=new int[2][3];
         int[][] trandizi=new int[3][2];
 
@@ -173,30 +176,66 @@ public class Main {
 
 
 
+         */
 
 
-    }
-
-
-
-
+        //sayi tahmin oyunu
 
 
 
+                int number = (int) Math.random()*100;
+                //int number = (int) (Math.random() * 100);
+
+                Scanner scan = new Scanner(System.in);
+                int hak = 0;
+                int selected;
+                int[] wrong = new int[5];
+                boolean isWin = false;
+                boolean isWrong = false;
+
+                System.out.println(number);
+                while (hak < 5) {
+                    System.out.print("Lütfen tahmininizi giriniz : ");
+                    selected = scan.nextInt();
+
+                    if (selected < 0 || selected > 99) {
+                        System.out.println("Lütfen 0-100 arasında bir değer giriniz.");
+                        if (isWrong) {
+                            hak++;
+                            System.out.println("Çok fazla hatalı giriş yaptınız. Kalan hak : " + (5 - hak));
+                        } else {
+                            isWrong = true;
+                            System.out.println("Bir daha hatalı girişinizde hakkınızdan düşülecektir.");
+                        }
+                        continue;
+                    }
+
+                    if (selected == number) {
+                        System.out.println("Tebrikler, doğru tahmin ! Tahmin ettiğini sayı : " + number);
+                        isWin = true;
+                        break;
+                    } else {
+                        System.out.println("Hatalı bir sayı girdiniz !");
+                        if (selected > number) {
+                            System.out.println(selected + " sayısı, gizli sayıdan büyüktür.");
+                        } else {
+                            System.out.println(selected + " sayısı, gizli sayıdan küçüktür.");
+                        }
+
+                        wrong[hak++] = selected;
+                        System.out.println("Kalan hakkı : " + (5 - hak));
+                    }
+                }
+
+                if (!isWin) {
+                    System.out.println("Kaybettiniz ! ");
+                    if (!isWrong) {
+                        System.out.println("Tahminleriniz : " + Arrays.toString(wrong));
+                    }
+                }
+
+            }
+        }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    }
 
